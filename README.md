@@ -10,6 +10,6 @@ You will also need to download and build Stanford CoreNLP from their [GitHub rep
 
 Then place the models in CoreNLP root folder and run the CoreNLP server by typing `java -mx4g -cp "stanford-corenlp.jar:stanford-english-corenlp-models-current.jar:lib/*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer` in a CLI.
 
-Run `npm install` to install the dependencies then `node server.js` to run the application. It will be available on port 8080 (you can change it in file server.js.
+Run `npm install` to install the dependencies then `node server.js` to run the application. It will be available on port 8080 (you can change it in file server.js).
 
 You're all set !
