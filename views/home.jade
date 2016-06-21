@@ -1,0 +1,32 @@
+mixin showResult(result)
+  li.list-group-item(style="background-color:#{result.color};")
+    p= result.text
+
+html
+  head
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', rel='stylesheet')
+  body
+    div.container
+      h1 Twitter NLP
+      form(method='post', action='/')
+        div.form-group
+          label.form-label Entrez les mots-clés à rechercher
+          input.form-control(
+            required=true,
+            name='keywords',
+            value="#{keywords}"
+          )
+        div.form-group
+          label.form-label Combien de tweets voulez-vous analyser ?
+          input.form-control(
+            type="number",
+            required=true
+            name='nbTweets',
+            value="#{nbTweets}"
+          )
+        button.btn(type='submit') Analyser
+      h2 Résultats
+      ul.list-group
+        each result in results
+          +showResult(result)
+

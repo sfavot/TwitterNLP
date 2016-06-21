@@ -1,0 +1,30 @@
+{
+  "name": "twitter-nlp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfavot/TwitterNLP.git"
+  },
+  "keywords": [
+    "twitter",
+    "nlp"
+  ],
+  "author": "Suzanne Favot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfavot/TwitterNLP/issues"
+  },
+  "homepage": "https://github.com/sfavot/TwitterNLP#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "twitter-node-client": "0.0.6"
+  }
+}
